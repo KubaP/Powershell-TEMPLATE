@@ -5,15 +5,15 @@
 *TempPoint*
 
 # Ignore staging info from Visual Studio
-library/ProgramManager/.vs/*
-library/ProgramManager/ProgramManager/bin/*
-library/ProgramManager/ProgramManager/obj/*
+library/<MODULENAME>/.vs/*
+library/<MODULENAME>/<MODULENAME>/bin/*
+library/<MODULENAME>/<MODULENAME>/obj/*
 
 # ignore PowerShell Studio MetaData
-ProgramManager/ProgramManager.psproj
-ProgramManager/ProgramManager.psproj.bak
-ProgramManager/ProgramManager.psprojs
-ProgramManager/ProgramManager.psproj
+<MODULENAME>/<MODULENAME>.psproj
+<MODULENAME>/<MODULENAME>.psproj.bak
+<MODULENAME>/<MODULENAME>.psprojs
+<MODULENAME>/<MODULENAME>.psproj
 
 # ignore the TestResults
 TestResults/*
