@@ -1,5 +1,5 @@
 # <MODULENAME>
-Breif overview
+Brief overview
 
 Who module is aimed at
 
@@ -49,7 +49,7 @@ Use `-WhatIf` to see what changes a function will do.
 Use `-Confirm` to require a prompt for every major change.
 
 ## Build Instructions
-### Prerequesites
+### Prerequisites
 Install the following:
 - Powershell Core 6.2.1
 - Pester 4.9.0
@@ -65,7 +65,7 @@ git clone https://github.com/KubaP/Powershell-<MODULENAME>.git
 Run the following commands in this order:
 ```powershell
 & .\build\vsts-prerequisites.ps1
-& .\build\vsts-valiate.ps1
+& .\build\vsts-validate.ps1
 & .\build\vsts-build.ps1 -WorkingDirectory .\ -SkipPublish
 ```
 The built module will be located in the `.\publish` folder.
@@ -81,4 +81,4 @@ This project is licensed under the GPLv3 license - see [LICENSE.md](./LICENSE) f
 
 
 ## Acknowledgements
-Any achnowledgements...
+Any acknowledgements...
