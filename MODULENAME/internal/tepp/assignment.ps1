@@ -1,3 +1,0 @@
-﻿# Tab expansion assignements for commands
-# E.g. Register-ArgumentCompleter -CommandName ... -ParameterName ... -Scriptblock ...
-

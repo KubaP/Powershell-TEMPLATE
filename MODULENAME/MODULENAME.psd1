@@ -6,7 +6,7 @@
 	ModuleVersion = '0.1.0'
 	
 	# ID used to uniquely identify this module
-	GUID = '#generate new guid'
+	GUID = '!!!GUID!!!'
 	
 	# Author of this module
 	Author = 'KubaP'
@@ -18,7 +18,7 @@
 	Copyright = 'Copyright (c) 2020 KubaP'
 	
 	# Description of the functionality provided by this module
-	Description = ''
+	Description = '!!!'
 	
 	# Minimum version of the Windows PowerShell engine required by this module
 	PowerShellVersion = '5.0'

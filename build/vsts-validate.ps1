@@ -1,2 +1,2 @@
-﻿# Run internal pester tests
+﻿# Run internal pester tests.
 & "$PSScriptRoot\..\<MODULENAME>\tests\pester.ps1"

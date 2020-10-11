@@ -1,4 +1,4 @@
-﻿# Install each module
+﻿# Install the required modules for testing.
 Write-Host "Installing Pester" -ForegroundColor Cyan
 Install-Module "Pester" -Force -SkipPublisherCheck -Verbose
 Import-Module "Pester" -Force -PassThru -Verbose

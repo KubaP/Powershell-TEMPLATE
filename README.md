@@ -18,15 +18,21 @@ In order to get started with the latest build, simply download the module from t
 ```powershell
 Install-Module <ModuleName>
 ```
-Installing this module does not mean that it is loaded automatically on start-up. Powershell supports loading modules on-the-fly since v3, however the first time you run a command it can be a bit slow to tabcomplete parameters or values. If you would like to load this module on shell start-up, add the following line to `~/Documents/Powershell/Profile.ps1` :
+Installing this module does not mean that it is loaded automatically on start-up. Powershell supports loading modules on-the-fly since v3, however the first time you run a command it can be a bit slow to tab-complete parameters or values. If you would like to load this module on shell start-up, add the following line to `~/Documents/Powershell/Profile.ps1` :
 ```powershell
 Import-Module <ModuleName>
 ```
 
 ### Requirements
-This module requires `powershell 5.1` minimum. Works with `powershell core` as well.
+This module requires minimum `Powershell 5.1`. Works with `Pwsh 6+` as well.
+\[OR\]
+This module requires minimum `Powershell 6`.
 
-This module works on ...
+This module works on **Windows** only.
+\[OR\]
+This module works on `Windows`, `MacOS`, and `Linux`. 
+
+⚠Only Windows is currently tested though.
 
 ## Usage
 Usage instructions/ overview of commands
@@ -74,11 +80,12 @@ The built module will be located in the `.\publish` folder.
 If there is a bug/issue please file it on the github issue tracker.
 
 ## Contributing
+If you have a suggestion, create a new `Github Issue` detailing the idea.
+
 Feel free to make pull requests if you have an improvement. Only submit a single feature at a time, and make sure that the code is cleanly formatted, readable, and well commented.
 
 ## License 
 This project is licensed under the GPLv3 license - see [LICENSE.md](./LICENSE) file for details.
-
 
 ## Acknowledgements
 Any acknowledgements...

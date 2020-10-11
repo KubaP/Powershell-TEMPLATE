@@ -1,8 +1,10 @@
 ﻿TOPIC
 	about_<MODULENAME>_scriptblocks
 	
+	
 SHORT DESCRIPTION
 	The <MODULENAME> module supports running custom scriptblocks on ...
+	
 	
 SCRIPTBLOCK OVERVIEW
 	The Pre-... runs before the main ... logic is executed.
@@ -13,6 +15,7 @@ SCRIPTBLOCK OVERVIEW
 	
 	An example of use cases for these scriptblocks:
 		- ...
+	
 	
 SCRIPTBLOCK SETUP
 	To utilise the full potential of the scriptblocks, you can manipulate data passed
@@ -34,7 +37,8 @@ SCRIPTBLOCK SETUP
 		
 	
 	To see a full list of ... object properties, run: ...
-		
+	
+	
 SCRIPTBLOCK EXAMPLE
 	
 	$scriptblock = {
@@ -52,7 +56,8 @@ SCRIPTBLOCK EXAMPLE
 	
 	This example ...
 	This scriptblock is run ...
-		
+	
+	
 KEYWORDS
 	<MODULENAME>
 		
