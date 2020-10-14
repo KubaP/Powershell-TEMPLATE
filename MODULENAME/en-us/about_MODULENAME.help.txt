@@ -6,37 +6,52 @@ SHORT DESCRIPTION
 	<MODULENAME> is a ... module designed to ...
 	
 	
-COMMANDS...
+OVERVIEW
+	General information regarding how the module works, and objects etc...
 	
 	
-	Example...
 	
+COMMAND-NAME
+	To do..., run:
+	
+		PS C:\> example
+	
+	This command will do...
+	...
+	...
+	
+	-...
+		Explanation of parameter...
 	
 	OPTIONAL PARAMETERS
 	
 	-...
-		
-		Allows you to ...
-
+		Explanation of parameter...
+	
 	<CommonParameters>
 		
 		-WhatIf
 		-Confirm
 		-Verbose
-
-
+	
+	
+	
 SCRIPTBLOCKS
 	When running ..., you can pass in ...
 	
 	For details, see: about_<MODULENAME>_scriptblocks
 	
 	
+	
 OTHER
 	The module stores all data in %APPDATA%\Powershell\<MODULENAME>
-	It is advised to **not** manually modify any files within this directory as it could cause unintended
-	consequences.
+	It is advised to **not** manually modify any files within this directory as
+	it could cause unintended consequences.
+	
 	
 	
 KEYWORDS
 	<MODULENAME>
+	other relevant tags
+	...
 	
