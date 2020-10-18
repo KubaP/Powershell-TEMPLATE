@@ -16,16 +16,42 @@
     - Require status checks to pass before merging
     - Require branches to be up-to-date
     - Select the `Master PR` check
+- Create Release Pipeline
+  - Artifact
+    - Github Repository
+    - Branch: master
+    - Version: Latest
+    - CD: Enabled -> branch:master
+  - Stage
+    - Powershell Job
+      - Path: $(System.DefaultWorkingDirectory)/_KubaP_Powershell-ProgramManager/build/vsts-build-prerequisites.ps1
+      - Use pscore
+    - Powershell Job
+      - Path: $(System.DefaultWorkingDirectory)/_KubaP_Powershell-ProgramManager/build/vsts-build.ps1
+      - Arguments: -ApiKey $(ApiKey)
+      - OutputVariable: BuildOutput
+    - Github Release
+      - Mode: create
+      - Repo: github repo
+      - Source: User specific tag
+      - Tag: v$(BuildOutput.version)
+      - Title: <MODULENAME> v$(BuildOutput.version)
+      - Assets: $(System.DefaultWorkingDirectory)/_KubaP_Powershell-<MODULENAME>/publish/<MODULENAME>-v$(BuildOutput.version).zip
+      - Include changelog: no
+      - Pre-release: yes
+    - Pipeline Variables
+      - system.debug = true
+      - ApiKey = <KEY>
 
 # For Later
 - Go through and fix/update the `README.md` file.
 
 # Before publishing package
-- Go though all `pull requests`/`commits` since last package to be sure of whats new/changed/fixed/updated etc.
+- Go though all `pull requests`/`commits` since last release to be sure of whats new/removed/fixed/updated etc.
 - Go through `.psd1` manifest to:
-  - Update `version`
+  - Update `version`.
   - Make sure tags are correct.
-- Go through `changelog.md` to create new entry for the new package.
+- Go through `changelog.md` to create new entry for the new release.
 - Go through `README.md` and `about_pages` to document any new features.
 
 # After Publishing first version

@@ -77,7 +77,7 @@ Get-Help <COMMAND NAME> -Full
 
 ### Extra features
 #### Tab completion
-The `...` parameter supports tab-completion of valid **existing** symlink names in the following commands:
+The `...` parameter supports tab-completion of valid **existing** <OBJECT> names in the following commands:
 - `...`
 - `...`
 
@@ -86,7 +86,7 @@ When creating a new ..., you can pass in a scriptblock which will evaluate...
 
 For details, see `about_<MODULENAME>_scriptblocks`.
 \[OR\]
-For details, see the `...` section in `about_<MODULENAME>`.
+For details, see the `... SCRIPTBLOCK` section in `about_<MODULENAME>`.
 
 #### -WhatIf and -Confirm support
 The following functions support `-WhatIf` and `-Confirm` parameters:
@@ -94,18 +94,19 @@ The following functions support `-WhatIf` and `-Confirm` parameters:
 - `...`
 
 Use `-WhatIf` to see and list what changes a command will do.
+
 Use `-Confirm` to ask for a prompt for every state-altering change.
 
 #### Formatting
-The `[...]` object within this module has custom formatting rules for all views. Simply pipe the output of the `Get-...` command to one of:
-| Command | Alias |
-|---------|-------|
-| Format-List | fl |
-| Format-Table | ft |
-| Format-Custom | fc |
-| Format-Wide | fw |
+The `[<OBJECT>]` object within this module has custom formatting rules for all views. Simply pipe the output of the `Get-<OBJECT>` command to one of:
+| Command       | Alias |
+|---------------|-------|
+| Format-List   |  fl   |
+| Format-Table  |  ft   |
+| Format-Custom |  fc   |
+| Format-Wide   |  fw   |
 
-The `Format-Custom` & `Format-List` views contain the largest amount of information regarding the ....
+The `Format-Custom` & `Format-List` views contain the largest amount of information regarding the <OBJECT>.
 
 ⚠This module supports `Fancy` formatting (using colours and emoijs) for enhanced readability. This *only* works within the **Windows Terminal** at the moment (support for other terminals which support ANSI-codes/emojis is WIP). The example below shows the enhanced formatting.
 
@@ -135,7 +136,7 @@ Navigate to the root repository folder and run the following commands:
 The built module will be located in the `.\publish` folder.
 
 ## Support
-⚠If you need help regarding the usage of the module, please see the **help page** by running `Get-Help about_Symlink`.
+⚠If you need help regarding the usage of the module, please see the **help page** by running `Get-Help about_<MODULENAME>`.
 
 If there is a bug/issue, please file it on the github issue tracker.
 
@@ -147,5 +148,5 @@ Feel free to make pull requests if you have an improvement. Only submit a single
 ## License 
 This project is licensed under the GPLv3 license - see [LICENSE.md](./LICENSE) file for details.
 
-## Acknowledgements
+## Acknowledgements ?
 Any acknowledgements...
