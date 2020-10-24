@@ -76,6 +76,15 @@ Get-Help <COMMAND NAME> -Full
 ```
 
 ### Extra features
+#### Aliases
+The commands in this module have default aliases:
+|Command	     |Alias|
+|----------------|-----|
+|New-<OBJECT>    | n.. |
+|Get-<OBJECT>    | g.. |
+|Set-<OBJECT>    | s.. |
+|Remove-<OBJECT> | r.. |
+
 #### Tab completion
 The `...` parameter supports tab-completion of valid **existing** <OBJECT> names in the following commands:
 - `...`
