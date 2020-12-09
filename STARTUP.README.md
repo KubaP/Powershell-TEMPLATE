@@ -28,6 +28,7 @@
       - Use pscore
     - Powershell Job
       - Path: $(System.DefaultWorkingDirectory)/_KubaP_Powershell-ProgramManager/build/vsts-build.ps1
+      - Use pscore
       - Arguments: -ApiKey $(ApiKey)
       - OutputVariable: BuildOutput
     - Github Release
