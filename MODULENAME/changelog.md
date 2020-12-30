@@ -1,18 +1,19 @@
 ﻿# Changelog
 ## 0.1.0 (2020-xx-xx)
- - Add: <OPTION>: information about change...
+ - Add: <OPTION>: Information about change...
+ - Add: *'-Param'* for `Command-Name`: ...
  - Fix: ...
  - Update: ...
  - Remove: ...
- - 
 
 <OPTION>
- - Command-Name
- - about_pages
+ - `Command-Name`
+ - `cmdlets`
+ - alias
+ - about_<MODULENAME>
  - help_descriptions
  - tab_completion
- - \[object\]
+ - `[object]`
  - Format.ps1xml
- - steam_output
  - should_process
- - 
+ - stream_output

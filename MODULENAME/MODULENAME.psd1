@@ -21,7 +21,7 @@
 	Description = '!!!'
 	
 	# Minimum version of the Windows PowerShell engine required by this module
-	PowerShellVersion = '5.0'
+	PowerShellVersion = '6.0'
 	
 	# Modules that must be imported into the global environment prior to importing
 	# this module
@@ -37,7 +37,7 @@
 	# TypesToProcess = @('xml\<MODULENAME>.Types.ps1xml')
 	
 	# Format files (.ps1xml) to be loaded when importing this module
-	FormatsToProcess = @('xml\<MODULENAME>.Format.ps1xml')
+	# FormatsToProcess = @('xml\<MODULENAME>.Format.ps1xml')
 	
 	# Functions to export from this module
 	FunctionsToExport = @(
@@ -66,7 +66,7 @@
 		PSData = @{
 			
 			# Tags applied to this module. These help with module discovery in online galleries.
-			Tags = @("Windows","PSEdition_Core","PSEdition_Desktop")
+			Tags = @("Windows", "MacOS", "Linux", "PSEdition_Core")
 			
 			# A URL to the license for this module.
 			LicenseUri = 'https://www.gnu.org/licenses/gpl-3.0.en.html'

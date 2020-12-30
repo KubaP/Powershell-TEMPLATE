@@ -1,12 +1,14 @@
 ﻿# Tab expansion assignements for commands.
 <#
-$argCompleter_EXAMPLE = {
+$argCompleter_EXAMPLE =
+{
 	param ($commandName, $parameterName, $wordToComplete, $commandAst, $fakeBoundParameters)
 	
 	# Import all objects from the database file.
 	$list = Read-<OBJECT>
 	
-	if ($list.Count -eq 0) {
+	if ($list.Count -eq 0)
+	{
 		Write-Output ""
 	}
 	

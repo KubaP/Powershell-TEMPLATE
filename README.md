@@ -1,12 +1,20 @@
 # <MODULENAME>
-Module description..., the same one used in the module manifest.
+Module description..., different from the one used in the module manifest. (That one goes in the github project description field).
 
 Who this module is aimed at...
 
 <br>
 
+\/ \/ \/ Delete any unnecessary ones fully, otherwise a line break will appear.
 [![Azure DevOps builds](https://img.shields.io/azure-devops/build/KubaP999/3d9148d2-04d0-4835-b7cb-7bf89bdbf11b/7?label=latest%20build&logo=azure-pipelines)](https://dev.azure.com/KubaP999/ProgramManager/_build/latest?definitionId=7&branchName=development)
-/\ Replace this one with the badge option from the azure 'dev-ci' pipeline management page.
+/\ Replace this one with a shields.io badge. Go to 'Build -> Azure DevOps Builds'
+    Fill out organisation/project/id values for the dev-ci pipeline
+    Style = 'flat'
+    label = 'latest'
+    logo = 'azure-pipelines'
+    logoColour = 'white'
+    
+   Turn the badge into a link by surrounding it in [] brackets, and then adding a (..) link afterwards which points to the azure dev ci pipeline page.
 [![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/KubaP999/ProgramManager/7?logo=codecov&logoColor=white)](https://dev.azure.com/KubaP999/ProgramManager/_build/latest?definitionId=7&branchName=development)
 /\ Replace this one with a shields.io badge. Go to 'Code Coverage' -> 'Azure Code Coverage'
     Fill out organisation/project/id values for the dev-ci pipeline
@@ -28,14 +36,12 @@ Who this module is aimed at...
 [![License](https://img.shields.io/badge/license-GPLv3-blue)](./LICENSE)
 
 ### Table of Contents
-
 1. [Getting Started](#getting-started)
-2. [Basic Usage](#basic-usage)
-3. [Information & Features](#information--features)
-4. [Build Instructions](#build-instructions)
-5. [Support](#support)
-6. [Contributing](#contributing)
-7. [License](#license)
+2. [Information & Features](#information--features)
+3. [Build Instructions](#build-instructions)
+4. [Support](#support)
+5. [Contributing](#contributing)
+6. [License](#license)
 
 ## Getting Started
 ### Installation
@@ -49,20 +55,18 @@ Import-Module <ModuleName>
 ```
 
 ### Requirements
-This module requires minimum `Powershell 5.1`. Works with `Pwsh 6+` as well.
-\[OR\]
 This module requires minimum `Powershell 6`.
 
-This module works on **Windows** only.
-\[OR\]
-This module works on `Windows`, `MacOS`, and `Linux`. 
+[This module works on **Windows** only.]
+|
+[This module works on `Windows`, `MacOS`, and `Linux`.]
 
 ⚠Whilst there are no platform-specific features in use, this module has not yet been tested on either `macOS` or `Linux` so there are no guarantees it will work 100% of the time.
 
-## Basic Usage
 ### Creating a new ...
-Usage instructions/overview of commands taken from about file.
+Usage instructions/overview of commands taken from the about file.
 ...
+[⚠This module has a complex feature-set. Please read the `help pages`.]
 
 ## Information & Features
 ### Documentation
@@ -77,8 +81,8 @@ Get-Help <COMMAND NAME> -Full
 
 ### Extra features
 #### Aliases
-The commands in this module have default aliases:
-|Command	     |Alias|
+The cmdlets in this module have default aliases:
+|Cmdlet 	     |Alias|
 |----------------|-----|
 |New-<OBJECT>    | n.. |
 |Get-<OBJECT>    | g.. |
@@ -86,19 +90,22 @@ The commands in this module have default aliases:
 |Remove-<OBJECT> | r.. |
 
 #### Tab completion
-The `...` parameter supports tab-completion of valid **existing** <OBJECT> names in the following commands:
+The `...`[/`...s`] parameter supports tab-completion of valid **existing** <OBJECT> [or <OBJECT>] names in the following cmdlets:
+- `...`
+- `...`
 - `...`
 - `...`
 
 #### Custom scriptblock evaluation
-When creating a new ..., you can pass in a scriptblock which will evaluate...
+When creating a new <OBJECT>, you can pass in a scriptblock which will evaluate...
 
-For details, see `about_<MODULENAME>_scriptblocks`.
-\[OR\]
-For details, see the `... SCRIPTBLOCK` section in `about_<MODULENAME>`.
+[For details, see `about_<MODULENAME>_scriptblocks`.]
+|
+[For details, see the `...` section in the help at: `about_<MODULENAME>`.]
 
 #### -WhatIf and -Confirm support
-The following functions support `-WhatIf` and `-Confirm` parameters:
+The following cmdlets support `-WhatIf` and `-Confirm` parameters:
+- `...`
 - `...`
 - `...`
 
@@ -107,8 +114,8 @@ Use `-WhatIf` to see and list what changes a command will do.
 Use `-Confirm` to ask for a prompt for every state-altering change.
 
 #### Formatting
-The `[<OBJECT>]` object within this module has custom formatting rules for all views. Simply pipe the output of the `Get-<OBJECT>` command to one of:
-| Command       | Alias |
+The `[<OBJECT>]` [and `[<OBJECT>]`] object[s] within this module has custom formatting rules for all views. Simply pipe the output of the `Get-<OBJECT>` cmdlet to one of:
+| Cmdlet        | Alias |
 |---------------|-------|
 | Format-List   |  fl   |
 | Format-Table  |  ft   |
@@ -117,15 +124,15 @@ The `[<OBJECT>]` object within this module has custom formatting rules for all v
 
 The `Format-Custom` & `Format-List` views contain the largest amount of information regarding the <OBJECT>.
 
-⚠This module supports `Fancy` formatting (using colours and emoijs) for enhanced readability. This *only* works within the **Windows Terminal** at the moment (support for other terminals which support ANSI-codes/emojis is WIP). The example below shows the enhanced formatting.
+⚠This module supports `Fancy` formatting (using colours and emoijs) for enhanced readability. This *only* works within the **Windows Terminal** at the moment (I've not tested this on other terminal emulators, but if you know that they support these extra features then let me know). The example below shows the enhanced formatting.
 
-![Example](./img.png)
+![Example](./example.png)
 
 ## Build Instructions
 #### Prerequisites
 Install the following:
 - Powershell Core 7.0.0+
-- Pester 4.10.1
+- Pester **4.10.1**
 - PSScriptAnalyzer 1.18.0+
 
 #### Clone the git repo
@@ -134,7 +141,6 @@ git clone https://github.com/KubaP/Powershell-<MODULENAME>.git
 ```
 
 #### Run the build scripts
-
 Navigate to the root repository folder and run the following commands:
 ```powershell
 & .\build\vsts-prerequisites.ps1
@@ -150,12 +156,12 @@ The built module will be located in the `.\publish` folder.
 If there is a bug/issue, please file it on the github issue tracker.
 
 ## Contributing
-If you have a suggestion, create a new `Github Issue` detailing the idea.
+If you have a suggestion, create a new **Github Issue** detailing the idea.
 
 Feel free to make pull requests if you have an improvement. Only submit a single feature at a time, and make sure that the code is cleanly formatted, readable, and well commented.
 
 ## License 
 This project is licensed under the GPLv3 license - see [LICENSE.md](./LICENSE) file for details.
 
-## Acknowledgements ?
-Any acknowledgements...
+### Acknowledgements
+Any acknowledgements...?
