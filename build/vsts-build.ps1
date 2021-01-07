@@ -136,11 +136,11 @@ foreach ($line in (Get-Content "$PSScriptRoot\filesBefore.txt" | Where-Object { 
 }
 
 # Gather commands of all public and internal functions.
-Get-ChildItem -Path "$WorkingDirectory\<MODULENAME>\internal\functions\" -Recurse -File -Filter "*.ps1" | ForEach-Object
+Get-ChildItem -Path "$WorkingDirectory\<MODULENAME>\internal\functions\" -Recurse -File -Filter "*.ps1" | ForEach-Object `
 {
 	$text += [System.IO.File]::ReadAllText($_.FullName)	
 }
-Get-ChildItem -Path "$WorkingDirectory\<MODULENAME>\functions\" -Recurse -File -Filter "*.ps1" | ForEach-Object
+Get-ChildItem -Path "$WorkingDirectory\<MODULENAME>\functions\" -Recurse -File -Filter "*.ps1" | ForEach-Object `
 {
 	$text += [System.IO.File]::ReadAllText($_.FullName)
 }
