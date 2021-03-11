@@ -17,3 +17,4 @@
  - Format.ps1xml
  - should_process
  - stream_output
+ - data

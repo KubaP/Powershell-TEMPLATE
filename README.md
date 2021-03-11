@@ -109,7 +109,7 @@ The following cmdlets support `-WhatIf` and `-Confirm` parameters:
 - `...`
 - `...`
 
-Use `-WhatIf` to see and list what changes a command will do.
+Use `-WhatIf` to see and list what changes a cmdlet will do.
 
 Use `-Confirm` to ask for a prompt for every state-altering change.
 
